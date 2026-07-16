@@ -1,0 +1,6 @@
+schema_version: 1
+catalog_revision: 2026-07-15.3
+images:
+  app:
+    source: preset:laravel:8.5
+    resolved: dunglas/frankenphp@sha256:a0ad00db3dd7f61b55a9951c9b6ef73ac8e1dd4c6de36979a0d1651b48da5f43
