@@ -1,0 +1,14 @@
+services:
+  rpc:
+    build:
+      context: .
+    network_mode: bridge
+    environment:
+      APP_DEBUG: 'false'
+      APP_ENV: production
+      APP_URL: http://localhost:${APP_PORT:-8000}
+      SHIPIT_RETURN_RPC_SHARED_SECRET: ${SHIPIT_RETURN_RPC_SHARED_SECRET:-insecure-local-demo-value}
+      SHIPIT_RETURN_RPC_SHOP: ${SHIPIT_RETURN_RPC_SHOP:-acme-demo.myshopify.com}
+      SHIPIT_RETURN_RPC_RATE_LIMIT_PER_MINUTE: ${SHIPIT_RETURN_RPC_RATE_LIMIT_PER_MINUTE:-300}
+    ports:
+      - '127.0.0.1:${APP_PORT:-8000}:8000'

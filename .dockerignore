@@ -1,0 +1,10 @@
+.env
+.git
+.github
+.idea
+.phpunit.cache
+.vscode
+node_modules
+database/*.sqlite
+storage/logs/*
+vendor
