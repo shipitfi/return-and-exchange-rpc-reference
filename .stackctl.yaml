@@ -1,0 +1,22 @@
+schema_version: 8
+
+services:
+  app:
+    preset: laravel
+    version: "8.5"
+    php_extensions:
+      - bcmath
+      - calendar
+      - exif
+      - gd
+      - imagick
+      - intl
+      - pcntl
+      - pdo_mysql
+      - pdo_pgsql
+      - redis
+      - soap
+      - sockets
+      - sodium
+      - xsl
+      - zip
