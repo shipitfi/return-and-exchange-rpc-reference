@@ -1,0 +1,22 @@
+schema_version: 9
+project: return-rpc-reference
+services:
+  app:
+    preset: laravel
+    php_extensions:
+    - bcmath
+    - calendar
+    - exif
+    - gd
+    - imagick
+    - intl
+    - pcntl
+    - pdo_mysql
+    - pdo_pgsql
+    - redis
+    - soap
+    - sockets
+    - sodium
+    - xsl
+    - zip
+    image: dunglas/frankenphp:php8.5
